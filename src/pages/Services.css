@@ -1,0 +1,164 @@
+.services{
+    padding: 100px 5rem;
+    background-color: rgba(254, 246, 228, 1);
+    width: 100%;
+
+
+}
+.service{
+    /* text-align: center; */
+}
+
+.service-flex{
+    display: flex;
+    /* gap: 10px; */
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 80px;
+    margin-top: 200px;  
+}
+.service-flex.active{
+    margin-top: 100px;
+    transition: 1s;
+    transform-origin: 3px;
+
+}
+.service-flex h3{
+    font-family: Plus Jakarta Sans;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: left;
+    color: rgba(0, 0, 0, 1)
+
+}
+.rectangle{
+    display: flex;
+    gap: 10px;
+}
+.rectangle > div{
+    width: 287px;
+    height: 474px;
+    margin: 20px auto;
+    /* gap: 0px; */
+    border-radius: 15px;
+    padding: 30px 15px ;
+    
+    opacity: 0px;
+    position: relative;
+    font-family: Plus Jakarta Sans;
+   font-size: 20px;
+   font-weight: 500;
+   line-height: 25px;
+   text-align: left;
+
+    
+}
+.rectangle > div p {
+    font-family: Plus Jakarta Sans;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
+
+}
+p.active{
+    border-top: 1px solid black;
+    margin: 10px auto;
+    padding: 3px 0;
+    /* width: 30px; */
+}
+.rectangle > div:nth-child(1){
+    background: rgba(243, 230, 160, 1);
+}
+.rectangle > div:nth-child(2){
+    background: rgba(204, 198, 242, 1);
+
+}
+.rectangle > div:nth-child(3){
+    background: rgba(203, 218, 255, 1);
+
+}
+.rectangle > div:nth-child(4){
+    background: rgba(234, 184, 252, 1);
+
+}
+.service-image{
+    position: absolute;
+    top: 45px;
+    left: 16px;
+}
+
+.service h2{
+    font-family: Plus Jakarta Sans;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    color: rgba(53, 51, 66, 1);
+    padding: 40px auto;
+
+
+}
+.service :nth-child(2){
+    font-family: Plus Jakarta Sans;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40.32px;
+    text-align: center;
+    padding: 20px;
+
+
+}
+.service :nth-child(3){
+    font-family: Plus Jakarta Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: center;
+
+
+
+}
+
+@media screen and (max-width:780px){
+    .services{
+        padding: 0 2rem;
+
+    }
+    .service h2{
+        font-family: Plus Jakarta Sans;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 30px;
+        padding-top: 70px;
+        padding-bottom: 20px;
+
+
+    }
+    .service :nth-child(2){
+        font-family: Plus Jakarta Sans;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 25.2px;
+        text-align: center;
+
+    }
+
+    
+}
+@media screen and (max-width:400px) {
+    .service :nth-child(2){
+        font-family: Plus Jakarta Sans;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 25.2px;
+        color: rgba(33, 37, 41, 1);
+        text-align: center;
+        
+        
+        
+
+    }
+    
+}

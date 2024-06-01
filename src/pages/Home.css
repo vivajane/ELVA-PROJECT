@@ -1,0 +1,244 @@
+.home-container{
+    margin-top: 80px;
+    background-color: #353342;
+    background-image: url("./images/mask.png");
+    width: 100%;
+    height: 887px;
+    gap: 10px;
+    opacity: 1;
+}
+.content{
+    padding-top: 90px;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.right img{
+    width: 500.68px;
+    height: 463.84px;
+    top: 268px;
+    left: 828px;
+    gap: 0px;
+    opacity: 0px;
+
+}
+.left-p  p span{
+    font-family: Plus Jakarta Sans;
+    font-size: 64px;
+    font-style: italic;
+    font-weight: 200;
+    padding-right: 13px;
+    line-height: 80.64px;
+    letter-spacing: 3%;
+    text-align: left;
+    color: rgba(255, 216, 3, 1);
+}
+.left{
+    width: 100%;
+    padding-right: 15px;
+}
+.left-p p{
+    font-family: Plus Jakarta Sans;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 80.64px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: rgba(254, 246, 228, 1);
+}
+.right-p{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 40px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 23px;
+    text-align: left;
+    width: 100%;
+    height: 90px;
+    top: 605px;
+    left: 187px;
+    gap: 0px;
+    opacity: 0px;
+    display: flex;
+}
+.f{
+    background: url("./images/vector.png");
+    height: 600px;
+    width: 100%;
+    padding: 0;
+    margin-top: 100px;
+}
+
+.line{
+    width: 100%;
+}
+.line img{
+    color: rgba(255, 216, 3, 1);
+    
+    padding: 12px;
+    width: 20px;
+}
+.p-content p{
+    font-family: Plus Jakarta Sans;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 1);
+}
+
+@media screen and (max-width:900px){
+    .home-container{
+        height: 600px;
+       
+    }
+    .f{
+        padding-top: 10px;
+    }
+    .left{
+        width: 100%;
+    }
+    .right img{
+        display: none;
+    }
+    
+    .content{
+      padding-top: 40px;
+      padding-left: 2rem;
+      padding-right: 2rem;
+        
+    }
+   
+    .right-p{
+        
+       width: 100%;
+    
+    }
+     
+    .left > .left-p p{
+        /* font-family: Plus Jakarta Sans; */
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 40.32px;
+        letter-spacing: 0.03em;
+        text-align: left;
+        padding-top: 30px;
+
+    }
+    .left-p p span{
+        /* font-family: Plus Jakarta Sans; */
+        font-size: 40px;
+        font-style: italic;
+        font-weight: 200;
+        line-height: 40.32px;
+        letter-spacing: 0.03em;
+        text-align: left;
+
+    }
+    
+
+    
+}
+
+@media screen and (max-width:480px) {
+    .home-container{
+        height: 628px;
+    }
+    .content{
+        padding: 0 2rem;
+    }
+
+    
+    .left > .left-p p{
+        font-family: Plus Jakarta Sans;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 40.32px;
+        letter-spacing: 0.03em;
+        text-align: left;
+        padding-top: 30px;
+
+    }
+    .p-content p{
+        font-family: Plus Jakarta Sans;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 23px;
+        text-align: left;
+        
+
+
+    }
+    .left-p p span{
+        font-family: Plus Jakarta Sans;
+        font-size: 32px;
+        font-style: italic;
+        font-weight: 200;
+        line-height: 40.32px;
+        letter-spacing: 0.03em;
+        text-align: left;
+
+    }
+  
+    .right-p p {
+        font-family: Plus Jakarta Sans;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 23px;
+        text-align: left;
+
+    }
+    .left{
+        /* width: 100%; */
+        width: 356px;
+        font-size: smaller;
+        height: 260px;
+        top: 212px;
+        left: 19px;
+        gap: 0px;
+        opacity: 0px;
+
+    }
+    .right-p{
+        gap: 15px;
+    }
+    
+    .right-p > .line-sub{
+        width: 37px;
+        height: 0px;
+        top: 397px;
+        left: 24px;
+        gap: 0px;
+        border: 3px 0px 0px 0px;
+        opacity: 0px;
+
+    /* angle: -0 deg; */
+
+    }
+    .line{
+        /* width: 37px;
+        padding: 10px; */
+        /* height: 0px;
+        top: 397px;
+        left: 24px;
+        gap: 0px;
+        border: 3px 0px 0px 0px;
+        opacity: 0px; */
+
+
+    }
+    .line img{
+        
+        padding: 1px;
+        width: 20px;
+        
+        
+    }
+   
+    
+    
+}
