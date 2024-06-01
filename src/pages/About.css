@@ -1,24 +1,23 @@
 .about{
     display: flex;
     justify-content: space-between;
-    padding: 30px 5rem;
+    padding: 60px 5rem;
     gap: 17px;
     width: 100%;
     background-color:rgba(254, 246, 228, 1);
 }
-.about-us h2{
+.about-us .h2{
     font-family: Plus Jakarta Sans;
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
-    border-bottom: 1px solid rgba(254, 246, 228, 1);
     text-align: left;
     color: rgba(53, 51, 66, 1);
-    /* padding: 10px 0; */
-
-
+    
+    
 }
-.about-us-span p{
+
+.about-us-span .paragraph{
     font-family: Plus Jakarta Sans;
     font-size: 32px;
     font-style: italic;
@@ -34,26 +33,11 @@
     font-weight: 400;
     line-height: 30px;
     text-align: left;
-    /* padding: 10px 0; */
+    padding-bottom: 10px;
 
 }
-.left{
+.right{
     width: 100%;
-    height: fit-content;
-}
-.left img{
-   
-    width: 424px;
-    height: 399.06px;
-    top: 39.79px;
-    padding: 0.47px 0px 0px 0px;
-    gap: 0px;
-    opacity: 0px;
-
-    padding: 20px;
-    
-    
-
 }
 .navlinkmore{
     font-family: Plus Jakarta Sans;
@@ -65,13 +49,75 @@
     background: rgba(53, 51, 66, 1);
     padding: 10px 35px;
     border-radius: 18px;
-    /* margin-top: 20px; */
+   
 }
 .read-more{
-    padding-top: 20px;
+   
+    align-items: left;
+}
+
+/* animation */
+
+.hero-container{
+    height: 450px;
+    position: relative;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    /* padding: 10px 0; */
+    
+   
+}
+.hero{
     display: flex;
-    justify-content: space-between;
+    width: calc(350px * 12);
+    animation: scroll 40s linear infinite;
+}
+.hero:hover{
+    animation-play-state: paused;
+}
+.slide{
+    height: 100px;
+    width: 80%;
+    display: flex;
     align-items: center;
+    padding: 15px;
+    perspective: 100px;
+}
+img{
+    width: 100%;
+    transition: 1s;
+}
+@keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px * 6));
+
+    }
+}
+img:hover{
+    transform: translateZ(20px);
+}
+.hero-container::before, .hero-container::after{
+    
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 15%;
+    z-index: 2;
+}
+.hero-container::before{
+    left: 0;
+    top: 0;
+}
+.hero-container::after{
+    right:0;
+    top: 0;
+    transform: rotateZ(180deg);
 }
 @media screen and (max-width:900px) {
     .about{

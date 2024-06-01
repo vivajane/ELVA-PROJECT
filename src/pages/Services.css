@@ -121,7 +121,7 @@ p.active{
 
 }
 
-@media screen and (max-width:780px){
+@media screen and (max-width:900px){
     .services{
         padding: 0 2rem;
 
@@ -144,10 +144,19 @@ p.active{
         text-align: center;
 
     }
+    .rectangle{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* width: 100%; */
+        margin: auto;
+    }
+    .rectangle > div{
+        width: 100%;
+    }
 
     
 }
-@media screen and (max-width:400px) {
+@media screen and (max-width:480px) {
     .service :nth-child(2){
         font-family: Plus Jakarta Sans;
         font-size: 18px;
@@ -155,10 +164,12 @@ p.active{
         line-height: 25.2px;
         color: rgba(33, 37, 41, 1);
         text-align: center;
-        
-        
-        
-
+    }
+    .rectangle{
+        display: block;
+    }
+    .services{
+        height: 2400px;
     }
     
 }

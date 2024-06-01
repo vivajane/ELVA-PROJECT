@@ -24,7 +24,7 @@ const Header = () => {
           <div className="logo-p">
             <a href="/">Styleplus</a>
           </div>
-          <div className="btnn">
+          <div className={show ? "btnn active" :"btnn"}>
             <button>Get Started</button>
             </div>
           
@@ -52,7 +52,7 @@ const Header = () => {
           
               <li>
               <NavLink  to="services" style={({isActive}) => ({
-                  color : isActive ? "rgba(255, 216, 3, 1)"  : "rgba(254, 246, 228, 1)"
+                  color : isActive ? "rgba(255, 216, 3, 1)" : "rgba(254, 246, 228, 1)"
                 })}
                 
                 onClick={closeShow}>

@@ -31,6 +31,7 @@ const Home = () => {
         </div>
         <div>
           <div className="f">f</div>
+          <div className="f">g</div>
         </div>
       </div>
     

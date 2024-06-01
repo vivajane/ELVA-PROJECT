@@ -4,6 +4,7 @@ import logosmile from "./images/boygirl.png";
 import logolaugh from "./images/laugh.png";
 import logogirl from "./images/girl.png";
 import talking from "./images/talking.png";
+import head from "./images/head.png";
 import maskgroup from "./images/Maskgroup.png";
 import { NavLink } from "react-router-dom";
 import { BsArrowRight } from "react-icons/bs";
@@ -15,15 +16,31 @@ import { Image } from "antd";
 const About = () => {
   return (
     <div className="about">
-      <div className="left">
-        <img src={logosmile} alt="logosmile" />
+      <div className="hero-container">
+        <div className="hero">
+          <div className="slide">
+            <img src={logosmile} alt="logo" />
+          </div>
+          <div className="slide">
+            <img src={head} alt="logosmile" />
+          </div>
+          <div className="slide">
+            <img src={logolaugh} alt="logolaugh" />
+          </div>
+          <div className="slide">
+            <img src={talking} alt="logotalking" />
+          </div>
+          <div className="slide">
+            <img src={logogirl} alt="logogirl" />
+          </div>
+        </div>
       </div>
 
       <div className="right">
         <div className="about-us">
-          <h2>ABOUT US</h2> <hr/>
+          <h2 className="h2">ABOUT US</h2>
           <div className="about-us-span">
-            <p>
+            <p className="paragraph">
               <span>
                 <BsQuote />
               </span>
@@ -44,17 +61,17 @@ const About = () => {
           </div>
         </div>
         <div className="read-more">
-        <NavLink to='about' className="navlinkmore">Read More</NavLink>
-        
-
+          <NavLink to="about" className="navlinkmore">
+            Read More
+          </NavLink>
         </div>
       </div>
     </div>
   );
 };
 
-
-{/* <Image.PreviewGroup
+{
+  /* <Image.PreviewGroup
      preview={{
       onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
     }}
@@ -80,6 +97,7 @@ const About = () => {
       width={200}
       src={logolaugh}
     />
-  </Image.PreviewGroup> */}
+  </Image.PreviewGroup> */
+}
 
 export default About;

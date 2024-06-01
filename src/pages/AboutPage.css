@@ -88,66 +88,7 @@ button{
     border-radius: 18px;
     margin-top: 10px;
 }
-.hero-container{
-    height: 500px;
-    position: relative;
-    width: 90%;
-    margin: auto;
-    display: grid;
-    place-items: center;
-    overflow: hidden;
-    
-   
-}
-.hero{
-    display: flex;
-    width: calc(350px * 12);
-    animation: scroll 40s linear infinite;
-}
-.hero:hover{
-    animation-play-state: paused;
-}
-.slide{
-    height: 100px;
-    width: 80%;
-    display: flex;
-    align-items: center;
-    padding: 15px;
-    perspective: 100px;
-}
-img{
-    width: 100%;
-    transition: 1s;
-}
-@keyframes scroll{
-    0%{
-        transform: translateX(0);
-    }
-    100%{
-        transform: translateX(calc(-250px * 6));
 
-    }
-}
-img:hover{
-    transform: translateZ(20px);
-}
-.hero-container::before, .hero-container::after{
-    
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 15%;
-    z-index: 2;
-}
-.hero-container::before{
-    left: 0;
-    top: 0;
-}
-.hero-container::after{
-    right:0;
-    top: 0;
-    transform: rotateZ(180deg);
-}
 @media screen and (max-width:900px) {
     .aboutt{
         /* display: block; */
