@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BsQuote } from "react-icons/bs";
 import logosmile from "./images/boygirl.png";
 import logolaugh from "./images/laugh.png";
@@ -11,30 +11,53 @@ import { BsArrowRight } from "react-icons/bs";
 
 // import logosmile from "./images/.png";
 import "./About.css";
-import { Image } from "antd";
+import { Image, Carousel } from "antd";
+const contentStyle = {
+  margin: 0,
+  height: "160px",
+  color: "#fff",
+  lineHeight: "160px",
+  textAlign: "center",
+  background: "#364d79",
+};
+
+const images = [
+  {
+    id: 1,
+    image: "./images/boygirl.png",
+  },
+  {
+    id: 2,
+    image: "./images/laugh.png",
+  },
+  {
+    id: 3,
+    image: logolaugh,
+  },
+  {
+    id: 4,
+    image: talking,
+  },
+  {
+    id: 5,
+    image: logogirl,
+  },
+];
 
 const About = () => {
+  useEffect(()=>{
+    console.log(images)
+
+  }, [])
   return (
     <div className="about">
-      <div className="hero-container">
-        <div className="hero">
-          <div className="slide">
-            <img src={logosmile} alt="logo" />
+      <Carousel arrows infinite={false}>
+        {images.map((image) => (
+          <div className="img-antd" key={image.id}>
+            <img src={image.image} alt=""/>
           </div>
-          <div className="slide">
-            <img src={head} alt="logosmile" />
-          </div>
-          <div className="slide">
-            <img src={logolaugh} alt="logolaugh" />
-          </div>
-          <div className="slide">
-            <img src={talking} alt="logotalking" />
-          </div>
-          <div className="slide">
-            <img src={logogirl} alt="logogirl" />
-          </div>
-        </div>
-      </div>
+        ))}
+      </Carousel>
 
       <div className="right">
         <div className="about-us">
@@ -101,3 +124,25 @@ const About = () => {
 }
 
 export default About;
+
+// jhhklghjk
+
+{
+  /* <div className="hero">
+          <div className="slide">
+            <img src={logosmile} alt="logo" />
+          </div>
+          <div className="slide">
+            <img src={head} alt="logosmile" />
+          </div>
+          <div className="slide">
+            <img src={logolaugh} alt="logolaugh" />
+          </div>
+          <div className="slide">
+            <img src={talking} alt="logotalking" />
+          </div>
+          <div className="slide">
+            <img src={logogirl} alt="logogirl" />
+          </div>
+        </div> */
+}

@@ -86,6 +86,11 @@
     padding: 15px;
     perspective: 100px;
 }
+.img-antd{
+    width: 50%;
+    height: auto;
+
+}
 
 img{
     width: 100%;
