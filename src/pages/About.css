@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     padding: 60px 5rem;
-    gap: 17px;
+    gap: 59px;
     width: 100%;
     background-color:rgba(254, 246, 228, 1);
 }
@@ -86,6 +86,7 @@
     padding: 15px;
     perspective: 100px;
 }
+
 img{
     width: 100%;
     transition: 1s;
@@ -121,14 +122,12 @@ img:hover{
 }
 @media screen and (max-width:900px) {
     .about{
-        display: block;
         padding: 0 2rem;
-        
+        display: block;
         
     }
     .about-us h2{
         padding: 30px;
-        
         font-family: Plus Jakarta Sans;
         font-size: 15px;
         font-weight: 400;
@@ -138,32 +137,34 @@ img:hover{
         
     }
     .styleplus p{
-        padding: 20px;
+        padding: 20px 0;
     }
-    .about-us-span p{
-       
-        font-weight: 700;
+    .about-us-span .paragraph{
+        font-family: Plus Jakarta Sans;
+        font-size: 20px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 30px;
+        text-align: left;
+        
     }
+   
     
 }
 
-@media screen and (max-width:400px){
+@media screen and (max-width:480px){
  
     .left img{
         width: 100%;
-
-        
     }
     .about{
-        display: block;
-        padding: 0 2rem;
         text-align: center;
         width: 100%;
         
         
     }
     .right > .about-us h2{
-        /* padding: 50px; */
+       
     }
     .about-us h2{
         font-family: Plus Jakarta Sans;
@@ -177,7 +178,7 @@ img:hover{
         font-family: Plus Jakarta Sans;
         font-size: 20px;
         font-style: italic;
-        font-weight: 700;
+        font-weight: 400;
         line-height: 30px;
         text-align: left;
         color: rgba(53, 51, 66, 1);

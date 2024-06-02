@@ -25,13 +25,14 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="right">
+          <div className="right-image">
             <img src={logo} alt="mask" />
           </div>
         </div>
-        <div>
+        <div className="g">
           <div className="f">f</div>
-          <div className="f">g</div>
+          {/* <div className="g">f</div> */}
+         
         </div>
       </div>
     

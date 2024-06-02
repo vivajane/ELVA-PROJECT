@@ -97,6 +97,7 @@ p.active{
     text-align: center;
     color: rgba(53, 51, 66, 1);
     padding: 40px auto;
+   
 
 
 }
@@ -131,8 +132,9 @@ p.active{
         font-size: 15px;
         font-weight: 400;
         line-height: 30px;
-        padding-top: 70px;
+        padding-top: 130px;
         padding-bottom: 20px;
+       
 
 
     }
@@ -171,5 +173,6 @@ p.active{
     .services{
         height: 2400px;
     }
+   
     
 }
