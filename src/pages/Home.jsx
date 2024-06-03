@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import logo from "./images/Maskgroup.png";
+import logo from "../images/Maskgroup.png";
 import { TfiLayoutLineSolid } from "react-icons/tfi";
 import logoone from "./images/Line.png";
 

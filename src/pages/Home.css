@@ -61,9 +61,8 @@
     height: 90px;
     top: 605px;
     left: 187px;
-    gap: 0px;
-    opacity: 0px;
-    display: flex;
+    /* opacity: 0px; */
+    
 }
 .f{
     background: url("./images/vector.png");
