@@ -1,9 +1,9 @@
 import React from "react";
 import "./Services.css";
-import logo from "../images/graphic.png";
-import web from "../images/web.png";
-import mobile from "../images/mobile.png";
-import corporate from "../images/corporate.png";
+import LogoImage from "../images/graphic.png";
+import WebImage from "../images/web.png";
+import MobileImage from "../images/mobile.png";
+import CorporateImage from "../images/corporate.png";
 import { IoArrowForwardCircleOutline } from "react-icons/io5";
 import { BsArrowDownCircleFill } from "react-icons/bs";
 import { useState } from "react";
@@ -11,25 +11,25 @@ import { useState } from "react";
 const ServicesOffer = [
   {
     id: 1,
-    image: corporate,
+    image: CorporateImage,
     name: "Corporate Branding",
     text: "Quis at diam diam quis in. Condimentum lobortis lacus a ornare leo ac bibendum lectus. Aliquam elementum mauris",
   },
   {
     id: 2,
-    image: logo,
+    image: LogoImage,
     name: "Graphic Design",
     text: "Quis at diam diam quis in. Condimentum lobortis lacus a ornare leo ac bibendum lectus. Aliquam elementum mauris",
   },
   {
     id: 3,
-    image: web,
+    image: WebImage,
     name: "Web Design &  Development",
     text: "Quis at diam diam quis in. Condimentum lobortis lacus a ornare leo ac bibendum lectus. Aliquam elementum mauris",
   },
   {
     id: 4,
-    image: mobile,
+    image: MobileImage,
     name: "Mobile Design & Development",
     text: "Quis at diam diam quis in. Condimentum lobortis lacus a ornare leo ac bibendum lectus. Aliquam elementum mauris",
   },
@@ -37,7 +37,6 @@ const ServicesOffer = [
 
 const Services = () => {
   const [showMore, setShowMore] = useState(false);
-
 
   return (
     <div className="services" id="services">
@@ -53,8 +52,12 @@ const Services = () => {
       </div>
       <div className="rectangle">
         {ServicesOffer.map((service) => (
-          <Service  key={service.id} service = {service} showMore={showMore} setShowMore={setShowMore}/>
-          
+          <Service
+            key={service.id}
+            service={service}
+            showMore={showMore}
+            setShowMore={setShowMore}
+          />
         ))}
       </div>
     </div>
@@ -63,35 +66,31 @@ const Services = () => {
 
 export default Services;
 
-const Service = ({service, showMore, setShowMore }) => {
+const Service = ({ service, showMore, setShowMore }) => {
   const id = service.id;
-  const newShow = id === showMore
+  const newShow = id === showMore;
   const onClickHandler = (id) => {
-    setShowMore(newShow ? null : id)
-   
-    
+    setShowMore(newShow ? null : id);
+  };
+  return (
+    <div>
+      <div className="service-image">
+        <img src={service.image} alt="service" />
+      </div>
+      <div className={`service-flex ${newShow && "active"}`}>
+        <h3>{service.name}</h3>
 
-  }
-  return <div>
-  <div className="service-image">
-    <img src={service.image} alt="service" />
-  </div>
-  <div className={`service-flex ${newShow && "active"}`}>
-  
-    <h3>{service.name}</h3>
-   
-
-    <div onClick={() => onClickHandler(id)} >
-      {newShow ? (
-        <BsArrowDownCircleFill />
-      ) : (
-        <IoArrowForwardCircleOutline />
-      )}
+        <div onClick={() => onClickHandler(id)}>
+          {newShow ? (
+            <BsArrowDownCircleFill />
+          ) : (
+            <IoArrowForwardCircleOutline />
+          )}
+        </div>
+      </div>
+      <div>
+        {newShow && <p className={newShow && "active"}>{service.text}</p>}
+      </div>
     </div>
-  </div>
-  <div>
-    {newShow && <p className={newShow && "active"}>{service.text}</p>}
-  </div>
-</div>
-  
+  );
 };
