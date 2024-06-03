@@ -4,7 +4,7 @@
     gap: 57px;
     width: 100%;
     background-color: rgba(254, 246, 228, 1);
-    background-image: url("./images/mainmask.png");
+    background-image: url("../images/mainmask.png");
 }
 .about-us h2{
     font-family: Plus Jakarta Sans;

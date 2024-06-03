@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import { BsQuote } from "react-icons/bs";
-import logosmile from "./images/boygirl.png";
-import logolaugh from "./images/laugh.png";
-import logogirl from "./images/girl.png";
-import talking from "./images/talking.png";
-import head from "./images/head.png";
-import maskgroup from "./images/Maskgroup.png";
+import logosmile from "../images/boygirl.png";
+import logolaugh from "../images/laugh.png";
+import logogirl from "../images/girl.png";
+import talking from "../images/talking.png";
+import head from "../images/head.png";
+import maskgroup from "../images/Maskgroup.png";
 import { NavLink } from "react-router-dom";
 import { BsArrowRight } from "react-icons/bs";
 

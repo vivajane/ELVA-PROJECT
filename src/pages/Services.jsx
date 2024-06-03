@@ -1,9 +1,9 @@
 import React from "react";
 import "./Services.css";
-import logo from "./images/graphic.png";
-import web from "./images/web.png";
-import mobile from "./images/mobile.png";
-import corporate from "./images/corporate.png";
+import logo from "../images/graphic.png";
+import web from "../images/web.png";
+import mobile from "../images/mobile.png";
+import corporate from "../images/corporate.png";
 import { IoArrowForwardCircleOutline } from "react-icons/io5";
 import { BsArrowDownCircleFill } from "react-icons/bs";
 import { useState } from "react";

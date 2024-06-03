@@ -1,11 +1,11 @@
 import React from "react";
 import { BsQuote } from "react-icons/bs";
-import logosmile from "./images/smile.png";
-import logolaugh from "./images/laugh.png";
-import logogirl from "./images/girl.png";
-import talking from "./images/talking.png";
-import maskgroup from "./images/Maskgroup.png";
-import yellow from "./images/yellow.png"
+import logosmile from "../images/smile.png";
+import logolaugh from "../images/laugh.png";
+import logogirl from "../images/girl.png";
+import talking from "../images/talking.png";
+import maskgroup from "../images/Maskgroup.png";
+import yellow from "../images/yellow.png"
 // import logosmile from "./images/.png";
 import "./AboutPage.css";
 import { Image } from "antd";
