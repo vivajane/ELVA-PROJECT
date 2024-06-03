@@ -7,57 +7,32 @@ import talking from "../images/talking.png";
 import head from "../images/head.png";
 import maskgroup from "../images/Maskgroup.png";
 import { NavLink } from "react-router-dom";
-import { BsArrowRight } from "react-icons/bs";
-
-
 import "./About.css";
-import { Image, Carousel } from "antd";
-const contentStyle = {
-  margin: 0,
-  height: "160px",
-  color: "#fff",
-  lineHeight: "160px",
-  textAlign: "center",
-  background: "#364d79",
-};
-
-const images = [
-  {
-    id: 1,
-    image: "./images/boygirl.png",
-  },
-  {
-    id: 2,
-    image: "./images/laugh.png",
-  },
-  {
-    id: 3,
-    image: logolaugh,
-  },
-  {
-    id: 4,
-    image: talking,
-  },
-  {
-    id: 5,
-    image: logogirl,
-  },
+import {Carousel } from "antd";
+const slideImages = [
+  head,
+  logolaugh,
+  logosmile,
+  logogirl,
+  talking,
 ];
 
 const About = () => {
-  useEffect(()=>{
-    console.log(images)
-
-  }, [])
   return (
     <div className="about">
-      <Carousel arrows infinite={false}>
-        {images.map((image) => (
-          <div className="img-antd" key={image.id}>
-            <img src={image.image} alt=""/>
-          </div>
-        ))}
-      </Carousel>
+     <div className="hero-container">
+        <Carousel dotPosition="left" infinite={true} autoplay dots={false}>
+          {slideImages.map((image, index) => (
+            <div key={index}>
+              <img
+                src={image}
+                alt="img"
+                style={{ width: "100%", height: "auto" }}
+              />
+            </div>
+          ))}
+        </Carousel>
+      </div>
 
       <div className="right">
         <div className="about-us">

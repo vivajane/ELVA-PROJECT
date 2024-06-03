@@ -58,18 +58,14 @@
 
 /* animation */
 
-.hero-container{
+
+.hero-container {
     height: 450px;
-    position: relative;
     width: 90%;
     margin: auto;
-    display: grid;
     place-items: center;
     overflow: hidden;
-    /* padding: 10px 0; */
-    
-   
-}
+  }
 .hero{
     display: flex;
     width: calc(350px * 12);
