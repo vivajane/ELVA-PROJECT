@@ -9,7 +9,7 @@ import maskgroup from "../images/Maskgroup.png";
 import { NavLink } from "react-router-dom";
 import { BsArrowRight } from "react-icons/bs";
 
-// import logosmile from "./images/.png";
+
 import "./About.css";
 import { Image, Carousel } from "antd";
 const contentStyle = {

@@ -39,7 +39,7 @@ const Services = () => {
   const [showMore, setShowMore] = useState(false);
 
   return (
-    <div className="services" id="services">
+    <div className="services">
       <div className="service">
         <h2>OUR SERVICES</h2>
         <p>Where Tech Meets Success</p>
@@ -64,7 +64,7 @@ const Services = () => {
   );
 };
 
-export default Services;
+
 
 const Service = ({ service, showMore, setShowMore }) => {
   const id = service.id;
@@ -94,3 +94,4 @@ const Service = ({ service, showMore, setShowMore }) => {
     </div>
   );
 };
+export default Services;
