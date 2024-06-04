@@ -25,7 +25,7 @@ const AboutPage = () => {
                   <img
                     src={image}
                     alt="img"
-                    style={{ width: "50%", height: "auto" , opacity: 0}}
+                    style={{ width: "50%", height: "auto" }}
                   />
                 </div>
               ))}

@@ -57,7 +57,6 @@ button{
     margin: auto;
     place-items: center;
     overflow: hidden;
-    opacity: 0;
   }
   .img-div img{
     margin: auto;
