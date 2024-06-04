@@ -1,3 +1,4 @@
+
 .about{
     display: flex;
     justify-content: space-between;
@@ -13,8 +14,6 @@
     line-height: 30px;
     text-align: left;
     color: rgba(53, 51, 66, 1);
-    
-    
 }
 
 .about-us-span .paragraph{
@@ -66,22 +65,7 @@
     place-items: center;
     overflow: hidden;
   }
-.hero{
-    display: flex;
-    width: calc(350px * 12);
-    animation: scroll 40s linear infinite;
-}
-.hero:hover{
-    animation-play-state: paused;
-}
-.slide{
-    height: 100px;
-    width: 80%;
-    display: flex;
-    align-items: center;
-    padding: 15px;
-    perspective: 100px;
-}
+
 .img-antd{
     width: 50%;
     height: auto;
@@ -92,35 +76,7 @@ img{
     width: 100%;
     transition: 1s;
 }
-@keyframes scroll{
-    0%{
-        transform: translateX(0);
-    }
-    100%{
-        transform: translateX(calc(-250px * 6));
 
-    }
-}
-img:hover{
-    transform: translateZ(20px);
-}
-.hero-container::before, .hero-container::after{
-    
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 15%;
-    z-index: 2;
-}
-.hero-container::before{
-    left: 0;
-    top: 0;
-}
-.hero-container::after{
-    right:0;
-    top: 0;
-    transform: rotateZ(180deg);
-}
 @media screen and (max-width:900px) {
     .about{
         padding: 0 2rem;
@@ -161,11 +117,6 @@ img:hover{
     .about{
         text-align: center;
         width: 100%;
-        
-        
-    }
-    .right > .about-us h2{
-       
     }
     .about-us h2{
         font-family: Plus Jakarta Sans;
@@ -173,6 +124,7 @@ img:hover{
         font-weight: 400;
         line-height: 30px;
         text-align: left;
+        padding-left: 12px;
 
     }
     .about-us-span p{
@@ -183,13 +135,9 @@ img:hover{
         line-height: 30px;
         text-align: left;
         color: rgba(53, 51, 66, 1);
-
-
-
     }
     .styleplus p{
         font-family: Plus Jakarta Sans;
-        
         font-family: Plus Jakarta Sans;
         font-size: 15px;
         font-weight: 400;

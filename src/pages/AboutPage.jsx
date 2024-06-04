@@ -15,24 +15,23 @@ const slideImages = [head, logolaugh, logosmile, logogirl, talking];
 const AboutPage = () => {
   return (
     <div className="aboutt" id="about">
-
       <div className="right">
         <div className="about-us">
           <h2>About Styleplus</h2>
           <div className="hero-container">
-        <Carousel dotPosition="left" infinite={true} autoplay dots={false}>
-          {slideImages.map((image, index) => (
-            <div key={index} className="img-div">
-              <img
-                src={image}
-                alt="img"
-                style={{ width: "50%", height: "auto" }}
-              />
-            </div>
-          ))}
-        </Carousel>
-      </div>
-          
+            <Carousel dotPosition="left" infinite={true} autoplay dots={false}>
+              {slideImages.map((image, index) => (
+                <div key={index} className="img-div">
+                  <img
+                    src={image}
+                    alt="img"
+                    style={{ width: "50%", height: "auto" }}
+                  />
+                </div>
+              ))}
+            </Carousel>
+          </div>
+
           <div className="about-us-span">
             <p>
               <span>
