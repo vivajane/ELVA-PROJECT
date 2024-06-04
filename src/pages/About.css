@@ -67,14 +67,13 @@
     overflow: hidden;
   }
 
-.img-antd{
-    width: 50%;
-    height: auto;
-
-}
+/* .img-antd{
+    width: 100%;
+} */
 
 img{
     width: 100%;
+    height: auto;
     transition: 1s;
 }
 
@@ -91,8 +90,6 @@ img{
         font-weight: 400;
         line-height: 30px;
         text-align: left;
-    
-        
     }
     .styleplus p{
         padding: 20px 0;

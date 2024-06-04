@@ -131,9 +131,12 @@
         text-align: left;
         padding: 10px;
     }
+    .line{
+        width: 100%;
+    }
     .line img{
         padding: 1px;
-        width: 40px;
+        width: 100%;
     }
 }
 @media screen and (max-width:480px) {
@@ -200,24 +203,12 @@
         left: 24px;
         gap: 0px;
         border: 3px 0px 0px 0px;
-        /* opacity: 0px; */
-
-    /* angle: -0 deg; */
-
     }
     .line{
         width: 100%;
-        /* padding: 10px; */
     }
     .line img{
-        
-        padding: 2px;
-        width: 350px;
-        height: 10px;
-        
-        
+        width: 100%;
+        height: auto;
     }
-   
-    
-    
 }

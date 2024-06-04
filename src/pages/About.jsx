@@ -68,56 +68,8 @@ const About = () => {
   );
 };
 
-{
-  /* <Image.PreviewGroup
-     preview={{
-      onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
-    }}
-   >
-    <Image width={200} src={logogirl}/>
-    <Image
-      width={200}
-      src={logolaugh}
-    />
-    <Image
-      width={200}
-      src={logosmile}
-    />
-    <Image
-      width={200}
-      src={talking}
-    />
-    <Image
-      width={400}
-      src={maskgroup}
-    />
-    <Image
-      width={200}
-      src={logolaugh}
-    />
-  </Image.PreviewGroup> */
-}
-
 export default About;
 
-// jhhklghjk
 
-{
-  /* <div className="hero">
-          <div className="slide">
-            <img src={logosmile} alt="logo" />
-          </div>
-          <div className="slide">
-            <img src={head} alt="logosmile" />
-          </div>
-          <div className="slide">
-            <img src={logolaugh} alt="logolaugh" />
-          </div>
-          <div className="slide">
-            <img src={talking} alt="logotalking" />
-          </div>
-          <div className="slide">
-            <img src={logogirl} alt="logogirl" />
-          </div>
-        </div> */
-}
+
+

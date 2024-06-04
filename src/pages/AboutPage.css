@@ -94,6 +94,9 @@ button{
 }
 
 @media screen and (max-width:400px){
+    .hero-container{
+        height: 300px;
+    }
  
     .img-div img{
         margin: auto;
